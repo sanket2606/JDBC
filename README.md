@@ -30,6 +30,17 @@ This document provides an overview of setting up a student application that util
 Replace "StudentDB" with your preferred database name.
 4. Create Tables
 Use SQL commands to create tables within the database. For example, you might create a "Students" table:
+CREATE TABLE Student (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(50),
+    lastName VARCHAR(50),
+    address VARCHAR(100),
+    mobaile BIGINT, -- Assuming you want to store mobile numbers as a number (without hyphens or other characters)
+    dob DATE,
+    gender VARCHAR(10),
+    parcentage INT
+);
+
 
 markdown
 Copy code
